@@ -7,6 +7,7 @@ import { useAppContext } from "./Context/AppContext";
 import Login from "./Pages/Login";
 import Footer from "./Components/Footer";
 import AllProducts from "./Pages/AllProducts";
+import ProductCategory from "./Pages/ProductCategory";
 
 
 
@@ -23,6 +24,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/products" element={<AllProducts/>}/>
+                <Route path="/products/:category" element={<ProductCategory/>}/>
 
 
                 <Route path="*" element={<ErrorPage/>}/>
